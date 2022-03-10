@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+.main-background{
+    background: url(image/image.jpg);
+    background-image: linear-gradient(0,0,0,0.7) , url(image/image.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 30px;
+    background-color: #eedecf;
+  }
+  .main-background .main-title h2{
+    text-align:center ;
+    padding: 15px 0;
+    margin: 0;
+    background: transparent;
+  }
+  .main-background .add-sections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-background .add-sections input{
+    margin-right: 15px;
+    border: 1px solid #313b4f;
+    padding: 9px 15px;
+    outline: none;
+    box-shadow: none;
+    border-radius: 30px;
+  }
+  .main-background .add-sections button{
+    background-color: #353956;
+    border: black;
+    padding: 10px 22px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+  }
+  .main-background .add-sections button:hover{
+    background: #d19e65;
+    color: #353956;
+    transition: 0.5s;
+  }
+
+.main-table-section{
+    padding: 20px 0 0 0;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+.App .column {
+    width: 30%;
+    text-align: center;
+    margin: 0 5px;
+}
+.App .column h3{
+    background: #353956ed;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.last-bottom-section{
+    
+    margin: 0 auto;
+    background: #eedecf;
+    padding: 10px 0;
+}
+
+.last-bottom-section .container {
+    width: 60%;
+    margin: -180px 340px;
+    box-shadow: 0 20px 65px rgb(223, 134, 19);
+    border-radius: 5px;
+    text-align: center; 
+    padding: 10px 15px;
+    background: #ffffff1a;
+    opacity: 2;
+}
+
+.container p {
+    color: black;
+    background-color: burlywood;
+    line-height: 2;
+    font-size: 18px;
+    margin: 0;
+  }
+ 
+
+.droppable-col {
+    width: 100%;
+    background-color: #829cbd69;
+    padding: 10px 10px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: #d19e65;
+    color: #000000;
+    /* border: 1px solid rgb(181, 163, 231); */
+    padding: 5px;
+    border-radius: 7px;
+    position: relative;
+}
+.item .tick-btn{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+.item .tick-btn img{
+    width: 15px;
+    height: 15px;
+}
+
+.item.dragging {
+    background-color: antiquewhite;
+}
+
